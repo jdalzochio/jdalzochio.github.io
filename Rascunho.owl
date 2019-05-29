@@ -27,8 +27,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#generate"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#hasProcess"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Dataset"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Process"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Component"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor"/>
     </owl:ObjectProperty>
@@ -52,7 +52,6 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LearningModel"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#PredictionStatistics"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
     </owl:ObjectProperty>
     
 
@@ -93,7 +92,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#hasProcess">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Component"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Dataset"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Process"/>
     </owl:ObjectProperty>
     
@@ -113,8 +112,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#hasValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Value"/>
     </owl:ObjectProperty>
     
 
@@ -129,32 +126,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#useRead -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#useRead">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#usedBy"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LearningModel"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#usedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#usedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LearningModel"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
-    </rdf:Description>
     
 
 
@@ -233,7 +210,6 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#when">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -242,7 +218,6 @@
     <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
 
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </rdf:Description>
     
@@ -301,21 +276,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
-    
-
-
     <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor"/>
-    
-
-
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Value -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Value"/>
     
 
 
@@ -330,34 +293,130 @@
     
 
 
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#SVM -->
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#AC_motor -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#SVM">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LearningModel"/>
-        <generate rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#prediction_statistics_svm"/>
-        <hasDataset rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing"/>
-        <predict rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#fault_1"/>
-        <useRead rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#read_vib"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#AC_motor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Component"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing1"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing2"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing3"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing4"/>
+        <componentId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XYZ_123</componentId>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing -->
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LocationSetorA -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LocationSetorA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_1"/>
+        <sendorId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vibrationsensor000001</sendorId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#artificial_neural_networks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#artificial_neural_networks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LearningModel"/>
+        <generate rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#prediction_statistics_ann"/>
+        <hasDataset rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing_vib"/>
+        <predict rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#fault_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing1">
         <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Component"/>
-        <hasProcess rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#process_cut"/>
-        <hasSensor rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#sensor_temperature"/>
-        <hasSensor rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#sensor_vibration"/>
+        <hasProcess rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#default"/>
+        <hasSensor rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_1"/>
         <componentId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bearingid00001</componentId>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing -->
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Component"/>
+        <hasProcess rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#default"/>
+        <hasSensor rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Component"/>
+        <hasProcess rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#default"/>
+        <hasSensor rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Component"/>
+        <hasProcess rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#default"/>
+        <hasSensor rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing_vib -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing_vib">
         <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Dataset"/>
+        <belongTo rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#accelerometer_1"/>
+        <hasProcess rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#default"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#default -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#default">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Process"/>
     </owl:NamedIndividual>
     
 
@@ -366,7 +425,66 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#fault_1">
         <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Fault"/>
-        <faultOf rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing"/>
+        <faultOf rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#bearing1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#location_bearing_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#partial_least_squares -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#partial_least_squares">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LearningModel"/>
+        <generate rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#prediction_statistics_pls"/>
+        <hasDataset rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing_vib"/>
+        <predict rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#fault_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#prediction_statistics_ann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#prediction_statistics_ann">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#PredictionStatistics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#prediction_statistics_pls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#prediction_statistics_pls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#PredictionStatistics"/>
     </owl:NamedIndividual>
     
 
@@ -395,97 +513,24 @@
     
 
 
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#process_cut -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#process_cut">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Process"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#randon_forest -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#randon_forest">
         <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LearningModel"/>
         <generate rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#prediction_statistics_rf"/>
-        <hasDataset rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing"/>
+        <hasDataset rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing_vib"/>
         <predict rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#fault_1"/>
-        <useRead rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#read_vib"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#read_temp -->
+    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#support_vector_machine -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#read_temp">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
-        <hasValue rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_10_Celsius"/>
-        <when rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-05-16T00:00:00</when>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#read_vib -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#read_vib">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Read"/>
-        <hasProcess rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#process_cut"/>
-        <hasValue rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_x_1"/>
-        <hasValue rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_y_3"/>
-        <hasValue rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_z_-1"/>
-        <when rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-05-16T00:00:00</when>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#sensor_temperature -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#sensor_temperature">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor"/>
-        <generate rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#read_temp"/>
-        <sendorId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sensertemp00001</sendorId>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#sensor_vibration -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#sensor_vibration">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Sensor"/>
-        <generate rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#read_vib"/>
-        <sendorId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vibrationsensor000001</sendorId>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_10_Celsius -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_10_Celsius">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Value"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_x_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_x_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Value"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_y_3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_y_3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Value"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_z_-1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#value_z_-1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#Value"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#support_vector_machine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#LearningModel"/>
+        <generate rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#prediction_statistics_svm"/>
+        <hasDataset rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#data_set_bearing_vib"/>
+        <predict rdf:resource="http://www.semanticweb.org/jovan/ontologies/2019/3/untitled-ontology-34#fault_1"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
